@@ -11,14 +11,11 @@ public class Library {
     }
 
     public static void main(String[] args){
-        System.out.println("test");
-//        int[] arr =  roll(5) ;
-//        System.out.println(arr[0]);
-        int[] testArr = {1,2,3,4,1} ;
-      System.out.println(containsDuplicates(testArr));
-        System.out.println(calcAverage(testArr));
-        int[][] testArr2 = {{10,10,10} , {2,2,2}};
-        System.out.println(lowestAvg2DArr(testArr2));
+        int[] dumbArray = {1,2,3,4,1} ;
+      System.out.println(containsDuplicates(dumbArray));
+        System.out.println(calcAverage(dumbArray));
+        int[][] array2D = {{10,10,10} , {2,2,2}};
+        System.out.println(lowestAvg2DArr(array2D));
     }
 
     public static int[] roll(int n){
@@ -30,10 +27,10 @@ public class Library {
     }
 
     public static boolean containsDuplicates(int[] arr){
-        ArrayList<Integer> testArr = new ArrayList<>() ;
+        ArrayList<Integer> tempArray = new ArrayList<>() ;
         for(int i  = 0; i < arr.length ; i++){
-            testArr.add(arr[i]);
-            if(testArr.indexOf(arr[i]) != i ){
+            tempArray.add(arr[i]);
+            if(tempArray.indexOf(arr[i]) != i ){
                 return  true ;
             }
 
