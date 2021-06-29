@@ -11,4 +11,17 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+//    @Test public void testAnalizeWeatherData(){
+//        Library classUnderTest = new Library();
+//        assertEquals("High :","72");
+//        assertEquals("Low :","51");
+//        assertEquals("Never saw temperature: ",63,classUnderTest.analizeWeatherData());
+//        assertEquals("Never saw temperature: ","67");
+//        assertEquals("Never saw temperature: ","68");
+//        assertEquals("Never saw temperature: ","69");
+
+
+//    }
+
+
 }
