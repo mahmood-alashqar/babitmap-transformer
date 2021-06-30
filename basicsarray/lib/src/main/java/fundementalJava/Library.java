@@ -49,6 +49,11 @@ public class Library {
         return  rollDice ;
     }
 
+    /**
+     *
+     * @param arr
+     * @return
+     */
     public static boolean containsDuplicates(int[] arr){
         ArrayList<Integer> tempArray = new ArrayList<>() ;
         for(int i  = 0; i < arr.length ; i++){
@@ -61,6 +66,11 @@ public class Library {
         return false ;
     }
 
+    /**
+     *
+     * @param arr
+     * @return
+     */
     public static float calcAverage(int[] arr){
         float sum = 0 ;
         for(int value: arr){
@@ -69,6 +79,11 @@ public class Library {
         return  sum / arr.length ;
     }
 
+    /**
+     *
+     * @param arr
+     * @return
+     */
     public static float lowestAvg2DArr(int[][] arr){
         float sum = 0 ;
         float lowestAvg = 10000;
@@ -83,6 +98,12 @@ public class Library {
         }
         return  lowestAvg ;
     }
+
+    /**
+     *
+     * @param arr
+     * @return
+     */
     public static int analizeWeatherData(int[][] arr){
         Set<Integer> tempertchurRow = new HashSet<>();
         for(int row=0;row<arr.length;row++)
@@ -110,8 +131,12 @@ public class Library {
     }
 
 
-
-public static String tally (ArrayList<String> votes){
+    /**
+     *
+     * @param votes
+     * @return the most votes repeated
+     */
+    public static String tally (ArrayList<String> votes){
     Map<String, Integer> wordMap = new HashMap<>();
 
     for (String st : votes) {
@@ -119,6 +144,9 @@ public static String tally (ArrayList<String> votes){
         if (wordMap.get(input) != null) {
             Integer count = wordMap.get(input) + 1;
             wordMap.put(input, count);
+
+
+                    //=
         } else {
             wordMap.put(input, 1);
         }
